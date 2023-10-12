@@ -101,9 +101,10 @@ h1,h2,h3,h4,h5,h6{
 .skills-col{
    border: 1px solid #C45F90;
    border-radius: 5px;
+   min-width: 100%;
    padding: 15px;
    margin: 20px 0;
-   transition: .4s;  
+   transition: .4s; 
 }
 .skills-col:hover{
    transform: scale(1.2);
@@ -126,6 +127,7 @@ h1,h2,h3,h4,h5,h6{
  .project-content{
    position: relative;
    overflow: hidden;
+   height: 100%;
  }
  .project-content-overlay{
    position: absolute;
@@ -148,9 +150,16 @@ h1,h2,h3,h4,h5,h6{
    transform: translateY(90px);
    text-transform: uppercase;
  }
+ .project-content-overlay h2 a{
+   text-decoration: none;
+ }
  .project-content-overlay h2:hover{
    color: var(--orange-color);
  }
+ .project-image {
+   height: 250px; 
+ }
+ 
  /*project code end*/
  /*contact code start*/
 .contact-section{
