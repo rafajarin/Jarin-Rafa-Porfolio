@@ -1,44 +1,15 @@
 # Jarin Rafa Portfolio
 
-Autoflow is a personal assistant that allows you to automate your workflow easily through voice commands. 
+"Jarin Rafa's GitHub portfolio is designed to function as an extension of my resume, providing comprehensive explanations of my work details and projects."
 
 # How it works.
 
-1. User input is recorded as voice, and through text to speech is converted into a text query.
-2. The text queries are passed through our syntax analyzer which breaks down constituent components.
-3. Each component is then passed through our intent parser. This is trained using ntlkt's POS tagging to identify the noun,verb etc.. of each component. 
-4. After classifying the target API then add this parsed component into a language constructor which builds a specification that can be sent to the dispatcher.
-5. The dispatcher parses the specification and recursively calling relevent APIs, QueryParsers and other endpoints.
+1. The entire portfolio is built using HTML, which defines the structure and content of the web page. It includes headings, paragraphs, lists, links, forms, and more.
+2. CSS is used to style the portfolio, making it visually appealing and responsive. It sets the layout, fonts, colors, and positioning of elements.
+3. The portfolio utilizes the Bootstrap framework for responsive design, making it look good on various screen sizes and devices. It's included via an external CSS link.
+4. While not explicitly mentioned in the code, JavaScript is typically used for interactive elements and functionality on websites.
+5.The viewport meta tag ensures that the website is responsive and looks good on various devices.
 
 # Build 
 
-**note that the API and the web server are intended to be dockerized**
-
-
-### Run the website + NLP backend.
-
-`cd website` 
-`npm install`
-`node app.js`
-
-Which should start up your server on localhost:3030
-
-### Run the API/Dispatcher
-
-To run the API service, place a `.env` file in the root folder with the relevant API keys. 
-
-Sample configuration.
-
-```
-TWILIO_ACCOUNT_SID=YOURSIDHERE
-TWILIO_AUTH_TOKEN=YOURAUTHHERE
-```
-
-Then start up the API service 
-`cd API`
-
-`npm install`
-
-`node index.js`
-
-Which should start up the API service on localhost:3000
+1.The portfolio is built using HTML, CSS, and JavaScript to create an interactive and visually appealing user interface. It features a responsive design, ensuring that it looks and functions well on various devices, from desktops to mobile phones.
